@@ -3,11 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>妄想山海俱乐部</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: url(images/山海_1.jpg) center / cover;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        main.table {
+            width: 82vw;
+            height: 90vh;
+            background-color: #fff5;
+            box-shadow: 0 8px 16px #0005;
+            border-radius: 16px;
+            overflow: 0 40px;
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            background-color: #fff4;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .input-group {
+            width: 35%;
+            height: 50%;
+            background-color: #fff5;
+            padding: 0 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .2s;
+        }
+
+        .header .input-group:hover {
+            width: 45%;
+            background-color: #fff8;
+            box-shadow: 0 5px 40px #0002;
+        }
+
+        .header .input-group img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .header .input-group input {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .shell {
+            width: 95%;
+            max-height: calc(90% - 25px);
+            background-color: #fffb;
+            margin:8px auto;
+            border-radius: 10px;
+            overflow: auto;
+            overflow: overlay;
+        }
+
+        .shell::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        table,th,td {
+            border-collapse: collapse;
+            padding: 20px;
+            text-align: left;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #d5d1defe;
+            cursor: pointer;
+        }
+
+        /* 偶数行背景色 */
+
+
+
+    </style>
 </head>
 <body>
     <!--<img src="山海_1.jpg" title="妄想山海">-->
-    123456
+    <main class="table">
+        <section class="header">
+            <h1>息壤の妄想山海</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="./images/search.png" alt="">
+            </div>
+        </section>
+        <section class="shell">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Location</th>
+                        <th>Last contact date</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>001</th>
+                        <th><img src="./images/search.png" alt=""></th>
+                        <th>西岛</th>
+                        <th>2024-1-1</th>
+                        <th><p class="button">查看</p></th>
+                    </tr>
+                    <tr>
+                        <th>002</th>
+                        <th><img src="./images/search.png" alt=""></th>
+                        <th>北山</th>
+                        <th>2024-1-5</th>
+                        <th><p class="button">查看</p></th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     
 </body>
 </html>
